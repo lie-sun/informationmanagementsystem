@@ -1,7 +1,7 @@
 header {
   width: 100vw;
   height: 50px;
-  background: #1c1c1c;
+  background: #222;
   color: #fff;
   line-height: 50px;
   overflow: hidden;
@@ -23,6 +23,7 @@ header {
   display: inline-block;
   float: right;
   line-height: 50px;
+  margin-right: 15px;
 }
 .login li {
   display: inline-block;
@@ -31,15 +32,26 @@ header {
   font-size: 15px;
 }
 .login li span:hover {
-  color: #CC0001;
+  color: #208bb7;
+  font-weight: 600;
 }
 .iconfont {
   vertical-align: middle;
   font-size: 20px;
   margin-right: 4px;
 }
-a {
+.a {
   text-decoration: none;
   color: #fff;
 }
-/*# sourceMappingURL=Header.module.css.mapcss.map */
+.userLogo {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=Header.module.css.map */

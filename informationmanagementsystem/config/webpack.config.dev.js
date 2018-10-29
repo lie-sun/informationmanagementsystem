@@ -228,7 +228,10 @@ module.exports = {
                                         },
                                     },
                                 ],
-                                ['import', {libraryName: 'antd', style: true}],
+                                ['import', {
+                                    libraryName: 'antd',
+                                    style: 'css'
+                                }],
                             ],
                             // This is a feature of `babel-loader` for webpack (not Babel itself).
                             // It enables caching results in ./node_modules/.cache/babel-loader/
@@ -286,6 +289,7 @@ module.exports = {
                             importLoaders: 1,
                             modules: true,
                             getLocalIdent: getCSSModuleLocalIdent,
+
                         }),
                     },
                     // Opt-in support for less (using.less extensions).
@@ -296,7 +300,9 @@ module.exports = {
                     {
                         test: lessRegex,
                         exclude: lessModuleRegex,
-                        use: getStyleLoaders({importLoaders: 2}, 'less-loader'),
+                        use: getStyleLoaders({
+                            importLoaders: 2,
+                        }, 'less-loader'),
                     },
                     // Adds support for CSS Modules, but using less
                     // using the extension .module.less

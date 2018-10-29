@@ -11,6 +11,7 @@ class Login extends Component {
                 <Link to='/' className={login.a}>首页</Link>
 
             </div>
+
         );
     }
 
